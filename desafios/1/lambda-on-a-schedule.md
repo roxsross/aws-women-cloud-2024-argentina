@@ -28,4 +28,19 @@
 - Asegúrate de considerar y aplicar los cinco pilares del Well-Architected Framework de AWS: fiabilidad, seguridad, eficiencia, excelencia operativa y optimización de costos.
 - Utiliza la documentación oficial de AWS y las mejores prácticas recomendadas por AWS para guiar tu diseño y configuración.
 
-¡Demuestra tus habilidades como futura arquitecta de soluciones diseñando una arquitectura robusta y automatizada en AWS!
+--- 
+Resumen:
+1. **Crear una Instancia EC2:**
+   - Crea una instancia EC2 de tipo t2.micro y adjunta un grupo de seguridad con reglas de ingreso permitidas para SSH, HTTP y HTTPS.
+
+2. **Configurar un Rol de IAM para Lambda:**
+   - En IAM, crea un rol para el servicio Lambda con permisos para realizar amplias acciones en los recursos configurados en la política.
+
+3. **Crear una Función Lambda:**
+   - Crea una función Lambda utilizando Python como tiempo de ejecución y asigna el rol de IAM creado anteriormente.
+   - Esta función verificará el estado de las instancias EC2 y las modificará según sea necesario (por ejemplo, detenerlas si están en ejecución).
+
+4. **Configurar una Regla en CloudWatch:**
+   - En CloudWatch, crea una regla de eventos con una programación fija o un trabajo CRON.
+   - Establece la función Lambda como objetivo de la regla de eventos.
+   - Edita la configuración de la función Lambda para establecer el tiempo de espera en 1 minuto.

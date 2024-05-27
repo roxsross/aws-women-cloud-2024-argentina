@@ -10,7 +10,7 @@
 
 2. **Configuración de Función Lambda:**
    - En el servicio IAM, crea un rol que siga el principio de seguridad, otorgando permisos mínimos necesarios para la función Lambda.
-   - Implementa una función Lambda que siga los principios de eficiencia y excelencia operativa. Asegúrate de utilizar las mejores prácticas de programación y manejo de errores.
+   - Implementa una función Lambda con el runtime Python version 3.10 en adelante, que siga los principios de eficiencia y excelencia operativa. Asegúrate de utilizar las mejores prácticas de programación y manejo de errores.
 
 3. **Automatización de Gestión de Instancias:**
    - Utiliza la función Lambda para automatizar la gestión de instancias EC2, siguiendo los principios de operaciones sin esfuerzo y automatización.

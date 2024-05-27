@@ -21,8 +21,8 @@
    - Establece alarmas en CloudWatch para alertar sobre eventos importantes, como la detención o el inicio de instancias EC2.
 
 #### Archivos Adjuntos:
-- `lambda_role.json`: Política adjunta al rol de ejecución de Lambda, que sigue los principios de permisos mínimos necesarios.
-- `lambda_func.py`: Función Lambda que implementa la lógica de gestión de instancias EC2, siguiendo los principios de eficiencia y automatización.
+- `lambda_role.json`: [codigo](./lambda_role.json) Política adjunta al rol de ejecución de Lambda, que sigue los principios de permisos mínimos necesarios.
+- `lambda_func.py`: [codigo](./lambda_func.py) Función Lambda que implementa la lógica de gestión de instancias EC2, siguiendo los principios de eficiencia y automatización.
 
 #### Notas Adicionales:
 - Asegúrate de considerar y aplicar los cinco pilares del Well-Architected Framework de AWS: fiabilidad, seguridad, eficiencia, excelencia operativa y optimización de costos.
